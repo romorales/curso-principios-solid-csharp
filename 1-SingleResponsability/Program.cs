@@ -1,5 +1,6 @@
 ﻿using SingleResponsability;
 
 StudentRepository studentRepository = new();
-studentRepository.Export();
+ExportHelper<Student> export = new();
+export.Export(studentRepository.GetAll());
 Console.WriteLine("Proceso Completado");
