@@ -11,6 +11,5 @@ void CalculateSalaryMonthly(List<Employee> employees)
     {
         decimal salary = item.CalculateSalary();
         Console.WriteLine($"The {item.Fullname}'s salary is {salary}");
-        
     }
 }
