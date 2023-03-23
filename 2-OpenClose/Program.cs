@@ -6,6 +6,7 @@ ShowSalaryMonthly(new List<IEmployee>() {
     new EmployeePartTime("Manuel Lopera", 180),
     new EmployeePartTime("Juan Morales", 100),
     new EmployeePartTime("Ivan Gonzalez", 180, 13000M),
+    new EmployeeContractor("Manuel perez", 200)
 });
 
 

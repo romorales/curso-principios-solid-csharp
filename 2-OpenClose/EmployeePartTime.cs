@@ -6,14 +6,7 @@ namespace OpenClose
         public int HoursWorked { get; set; }
         public decimal HourValue { get; set; }
 
-        public EmployeePartTime(string fullname, int hoursWorked)
-        {
-            Fullname = fullname;
-            HoursWorked = hoursWorked;
-            HourValue = 20000M;
-        }
-
-        public EmployeePartTime(string fullname, int hoursWorked, decimal hourValue)
+        public EmployeePartTime(string fullname, int hoursWorked, decimal hourValue = 20000M)
         {
             Fullname = fullname;
             HoursWorked = hoursWorked;
@@ -22,11 +15,11 @@ namespace OpenClose
 
         public decimal CalculateSalaryMonthly()
         {
-           decimal salary = this.HourValue * this.HoursWorked;
-            if (this.HoursWorked > 160)
+           decimal salary = HourValue * HoursWorked;
+            if (HoursWorked > 160)
             {
                 decimal effortCompensation = 5000M;
-                int extraDays = this.HoursWorked - 160;
+                int extraDays = HoursWorked - 160;
                 salary += effortCompensation * extraDays;
             } 
 
