@@ -1,12 +1,12 @@
 namespace OpenClose
 {
-    public class EmployeeFullTime: IEmployee
+    public class EmployeeContractor : IEmployee
     {
         public string Fullname { get; set; }
         public int HoursWorked { get; set; }
         public decimal HourValue { get; set; }
 
-        public EmployeeFullTime(string fullname, int hoursWorked, decimal hourValue = 30000M)
+        public EmployeeContractor(string fullname, int hoursWorked, decimal hourValue = 20000M)
         {
             Fullname = fullname;
             HoursWorked = hoursWorked;
