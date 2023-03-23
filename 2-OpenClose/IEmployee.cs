@@ -6,7 +6,6 @@ namespace OpenClose
     {
         string Fullname { get; set; }
         int HoursWorked { get; set; }
-
         decimal HourValue { get; set; }
 
         decimal CalculateSalaryMonthly();
